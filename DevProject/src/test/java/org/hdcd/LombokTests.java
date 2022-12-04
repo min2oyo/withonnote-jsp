@@ -178,4 +178,14 @@ public class LombokTests {
 
 	}
 
+	@Test
+	public void testNoArgsConstructor2() {
+
+		Member member = new Member();
+
+		System.out.println();
+		System.out.println("testNoArgsConstructor2: " + member);
+
+	}
+
 }
