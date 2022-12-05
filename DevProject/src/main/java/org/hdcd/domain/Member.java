@@ -1,17 +1,15 @@
 package org.hdcd.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 @SuppressWarnings("unused")
-@NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 @ToString(exclude = "userName")
 public class Member {
 
-	private String userId;
-	private String password;
+	private final String userId;
+	private final String password;
 	private String userName;
 
 }

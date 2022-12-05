@@ -66,16 +66,6 @@ public class LombokTests {
 	}
 
 	@Test
-	public void testToStringExclude() {
-
-		Member member = new Member();
-
-		System.out.println();
-		System.out.println("testToStringExclude: " + member);
-
-	}
-
-	@Test
 	public void testBoard() {
 
 		Board board1 = new Board();
@@ -179,12 +169,12 @@ public class LombokTests {
 	}
 
 	@Test
-	public void testNoArgsConstructor2() {
+	public void testRequiredArgsConstructor2() {
 
-		Member member = new Member();
+		Member member = new Member("userId1", "password1");
 
 		System.out.println();
-		System.out.println("testNoArgsConstructor2: " + member);
+		System.out.println("testRequiredArgsConstructor2: " + member);
 
 	}
 
