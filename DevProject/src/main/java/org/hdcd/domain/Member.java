@@ -1,10 +1,12 @@
 package org.hdcd.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 @SuppressWarnings("unused")
 @RequiredArgsConstructor
+@AllArgsConstructor
 @ToString(exclude = "userName")
 public class Member {
 

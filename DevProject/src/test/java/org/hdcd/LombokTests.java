@@ -1,5 +1,6 @@
 package org.hdcd;
 
+import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -175,6 +176,26 @@ public class LombokTests {
 
 		System.out.println();
 		System.out.println("testRequiredArgsConstructor2: " + member);
+
+	}
+
+	@Test
+	public void testAllArgsConstructor() {
+
+		System.out.println();
+		Board board = new Board(1, "title1", "content1", "writer1", LocalDateTime.now());
+
+		System.out.println(board);
+
+	}
+
+	@Test
+	public void testAllArgsConstructor2() {
+
+		System.out.println();
+		Member member = new Member("userId1", "password1", "userName1");
+
+		System.out.println(member);
 
 	}
 
