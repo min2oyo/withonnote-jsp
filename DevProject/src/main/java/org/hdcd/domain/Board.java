@@ -3,17 +3,19 @@ package org.hdcd.domain;
 import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
-@EqualsAndHashCode(of = "boardNo")
+@Data
 @RequiredArgsConstructor
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@EqualsAndHashCode(of = "boardNo")
+@Builder
 public class Board {
 
 	private int boardNo;
